@@ -76,7 +76,7 @@ GROUP BY fc.category_id;
 -- Hint: JOIN film and language tables, then use AVG () and GROUP BY.
 SELECT l.name AS language, AVG(f.rental_rate) AS avg_rental_rate
 FROM film f
-JOIN language l ON f.language_id = l.language_id
+Right JOIN language l ON f.language_id = l.language_id
 GROUP BY l.name;
 
 SELECT *
